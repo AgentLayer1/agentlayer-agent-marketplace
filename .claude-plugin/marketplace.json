@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agentlayer",
+  "description": "AgentLayer's plugin marketplace for Claude Code and Codex. Agentic primitives, identity-aware assistants, and industry-tuned skill packs for fintech, government, healthcare, legal, education, and hospitality. Each plugin ships with built-in human oversight, audit trails, and ASEAN-regional compliance awareness, the foundations of an AI-native operation. agentlayer.one",
+  "owner": {
+    "name": "AgentLayer",
+    "url": "https://agentlayer.one"
+  },
+  "plugins": [
+    {
+      "name": "agent-kevin",
+      "description": "Portable, file-based personal AI assistant. Compiles raw sessions into a queryable wiki, manages tasks across project lifecycles, drives SEO/web tools (Google Search Console, PageSpeed, SerpAPI, OpenPageRank, Playwright, Perplexity), and ships 18 skills covering onboarding, daily/weekly/monthly cadences, SEO audits, and content workflows. Runs entirely on local markdown + YAML. Your data lives wherever you launch Claude Code.",
+      "source": {
+        "source": "github",
+        "repo": "AgentLayer1/agent-kevin"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/AgentLayer1/agent-kevin",
+      "license": "Apache-2.0",
+      "keywords": ["personal-ai", "knowledge-base", "task-management", "agentic", "seo", "content"]
+    }
+  ]
+}

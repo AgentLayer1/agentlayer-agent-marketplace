@@ -1,0 +1,21 @@
+{
+  "name": "agentlayer",
+  "interface": {
+    "displayName": "AgentLayer"
+  },
+  "plugins": [
+    {
+      "name": "agent-kevin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AgentLayer1/agent-kevin.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

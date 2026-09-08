@@ -1,0 +1,16 @@
+# secrets
+.env
+.env.*
+!.env.example
+keys.json
+certificates/
+*.pem
+*.key
+
+# ai
+.claude
+
+# editor / os
+.DS_Store
+**/.DS_Store
+Thumbs.db
