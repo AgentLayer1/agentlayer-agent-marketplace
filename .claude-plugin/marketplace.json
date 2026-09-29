@@ -11,8 +11,8 @@
       "name": "agent-kevin",
       "description": "Portable, file-based personal AI assistant. Compiles raw sessions into a queryable wiki, manages tasks across project lifecycles, drives SEO/web tools (Google Search Console, PageSpeed, SerpAPI, OpenPageRank, Playwright, Perplexity), and ships 18 skills covering onboarding, daily/weekly/monthly cadences, SEO audits, and content workflows. Runs entirely on local markdown + YAML. Your data lives wherever you launch Claude Code.",
       "source": {
-        "source": "github",
-        "repo": "AgentLayer1/agent-kevin"
+        "source": "url",
+        "url": "https://github.com/AgentLayer1/agent-kevin.git"
       },
       "category": "productivity",
       "homepage": "https://github.com/AgentLayer1/agent-kevin",

@@ -34,7 +34,7 @@ One catalog, two hosts: Claude Code reads `.claude-plugin/marketplace.json`, Cod
 From inside any running Claude Code session:
 
 ```text
-/plugin marketplace add github:AgentLayer1/agentlayer-agent-marketplace
+/plugin marketplace add AgentLayer1/agentlayer-agent-marketplace
 /plugin install agent-kevin@agentlayer
 ```
 
