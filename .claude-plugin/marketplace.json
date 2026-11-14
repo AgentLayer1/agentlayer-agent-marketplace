@@ -21,7 +21,7 @@
     },
     {
       "name": "agentlayer",
-      "description": "Oppi 🐙, an agent that remembers your work in a folder you own: every session captured, compiled into plain markdown, and loaded back before you type. Tasks, briefings, a dashboard, and packs for GitHub, databases, support desks, SEO and a browser. Moving from agent-kevin? Run its migrate command first.",
+      "description": "An agent that remembers your work, in a folder you own. It captures every session, compiles what it learned into plain markdown, and loads it back before you type. Tasks, briefings, a dashboard, and packs for GitHub, databases, support desks, SEO and a browser. All data stays local. Moving from agent-kevin? Run /agent-kevin:move first.",
       "source": {
         "source": "url",
         "url": "https://github.com/AgentLayer1/agentlayer-agent.git"

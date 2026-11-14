@@ -39,7 +39,7 @@ From inside any running Claude Code session:
 /plugin install agentlayer@agentlayer
 ```
 
-> Already on `agent-kevin`? Keep it until you move: its `migrate` command copies your home into a new folder for `agentlayer`.
+> Already on `agent-kevin`? Keep it until you move: run `/agent-kevin:move` in your home, and it copies the home into a new folder for `agentlayer`.
 
 > Registered the old `agentlayer-claude-marketplace` repo? Adding this one replaces it, since both carry the marketplace name `agentlayer`, and the plugin id `agent-kevin@agentlayer` is unchanged.
 
