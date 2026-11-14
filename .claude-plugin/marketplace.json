@@ -18,6 +18,18 @@
       "homepage": "https://github.com/AgentLayer1/agent-kevin",
       "license": "Apache-2.0",
       "keywords": ["personal-ai", "knowledge-base", "task-management", "agentic", "seo", "content"]
+    },
+    {
+      "name": "agentlayer",
+      "description": "Oppi 🐙, an agent that remembers your work in a folder you own: every session captured, compiled into plain markdown, and loaded back before you type. Tasks, briefings, a dashboard, and packs for GitHub, databases, support desks, SEO and a browser. Moving from agent-kevin? Run its migrate command first.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AgentLayer1/agentlayer-agent.git"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/AgentLayer1/agentlayer-agent",
+      "license": "Apache-2.0",
+      "keywords": ["personal-ai", "knowledge-base", "task-management", "agentic", "memory"]
     }
   ]
 }

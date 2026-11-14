@@ -19,7 +19,8 @@ Curated plugins for [Claude Code](https://docs.claude.com/en/docs/claude-code) a
 
 | Plugin | What it does | License |
 |---|---|---|
-| [`agent-kevin`](https://github.com/AgentLayer1/agent-kevin) | Portable, file-based personal AI assistant. Knowledge pipeline, project lifecycles, daily/weekly/monthly cadences, SEO audit suite. | Apache-2.0 |
+| [`agentlayer`](https://github.com/AgentLayer1/agentlayer-agent) | Oppi 🐙, the AgentLayer agent: a portable, file-based assistant with a knowledge pipeline, project lifecycles, daily to monthly cadences and opt-in packs. | Apache-2.0 |
+| [`agent-kevin`](https://github.com/AgentLayer1/agent-kevin) | The previous agent, kept for existing homes until they move to `agentlayer`. | Apache-2.0 |
 
 More plugins are in the AgentLayer roadmap. Watch this repo or follow [agentlayer.one](https://agentlayer.one) for updates.
 
@@ -35,8 +36,10 @@ From inside any running Claude Code session:
 
 ```text
 /plugin marketplace add AgentLayer1/agentlayer-agent-marketplace
-/plugin install agent-kevin@agentlayer
+/plugin install agentlayer@agentlayer
 ```
+
+> Already on `agent-kevin`? Keep it until you move: its `migrate` command copies your home into a new folder for `agentlayer`.
 
 > Registered the old `agentlayer-claude-marketplace` repo? Adding this one replaces it, since both carry the marketplace name `agentlayer`, and the plugin id `agent-kevin@agentlayer` is unchanged.
 
@@ -46,7 +49,7 @@ From a terminal:
 
 ```bash
 codex plugin marketplace add AgentLayer1/agentlayer-agent-marketplace
-codex plugin add agent-kevin@agentlayer
+codex plugin add agentlayer@agentlayer
 ```
 
 Then launch `codex` from your agent home and run `$upgrade` to wire it; the plugin's README covers the rest.
@@ -57,7 +60,7 @@ Claude Code:
 
 ```text
 /plugin marketplace update agentlayer
-/plugin update agent-kevin@agentlayer
+/plugin update agentlayer@agentlayer
 /reload-plugins
 ```
 
@@ -72,10 +75,10 @@ codex plugin marketplace upgrade agentlayer
 Each plugin lives in its own repo and carries its own developer marketplace, so you never edit this catalog to work on a plugin:
 
 ```bash
-git clone https://github.com/AgentLayer1/agent-kevin ~/Developer/agent-kevin
+git clone https://github.com/AgentLayer1/agentlayer-agent ~/Developer/agentlayer-agent
 ```
 
-Then register the clone itself (`/plugin marketplace add ~/Developer/agent-kevin` and `/plugin install agent-kevin@agentdev-kevin` in Claude Code; `codex plugin marketplace add ~/Developer/agent-kevin` and `codex plugin add agent-kevin@agentdev-kevin` for Codex). The plugin's README has the full developer setup.
+Then register the clone itself (`/plugin marketplace add ~/Developer/agentlayer-agent` and `/plugin install agentlayer@agentlayer-dev` in Claude Code; `codex plugin marketplace add ~/Developer/agentlayer-agent` and `codex plugin add agentlayer@agentlayer-dev` for Codex). The plugin's README has the full developer setup.
 
 ---
 
@@ -100,7 +103,7 @@ Plugins AgentLayer is exploring next:
 - **agent-luna**: education assistant, lesson planning + curriculum tracking + student feedback synthesis.
 - **agent-haven**: hospitality assistant, guest CRM + booking ops + multilingual concierge prompts.
 
-Each will follow the same pattern as Kevin: portable markdown brain, MCP server for tools, hooks for the session lifecycle, opt-in skill packs.
+Each will follow the same pattern as Oppi: portable markdown brain, MCP server for tools, hooks for the session lifecycle, opt-in skill packs.
 
 ---
 
@@ -121,7 +124,7 @@ For improvements to a specific plugin, open the PR against that plugin's own rep
 
 This marketplace catalog is licensed under [Apache 2.0](./LICENSE). Each plugin lives in its own repo and carries its own LICENSE/NOTICE; the plugin's repo governs that plugin specifically.
 
-Third-party skill libraries installable via individual plugins (e.g. via `/agent-kevin:configure-skills` → skills.sh) are not bundled here. They install from upstream repos each carrying their own LICENSE.
+Third-party skill libraries installable via individual plugins (e.g. via `/agentlayer:configure-skills` → skills.sh) are not bundled here. They install from upstream repos each carrying their own LICENSE.
 
 ---
 
